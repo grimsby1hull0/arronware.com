@@ -59,7 +59,7 @@ h1, h2 ,h3, a {
 
 #navbox {
     padding: 10px 0px 10px 10px;
-    width: 125px;
+    width: 130px;
     border-color: #d5d5d5;
     border-width: 1px;
     border-style: solid;
@@ -118,4 +118,9 @@ img {
     image-rendering: -o-crisp-edges;            // OS X & Windows Opera (12.02+)
     image-rendering: crisp-edges;               // Possible future browsers.
     -ms-interpolation-mode: nearest-neighbor;   // IE (non standard naming)
+}
+
+
+@media (min-width: 320px) and (max-width: 999px) {
+
 }
