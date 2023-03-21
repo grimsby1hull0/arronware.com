@@ -228,4 +228,8 @@ img {
         margin: 10px;
         padding-bottom: 15px;
     }
+
+    #navdir {
+        padding: 8px;
+    }
 }
