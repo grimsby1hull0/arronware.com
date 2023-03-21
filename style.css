@@ -57,6 +57,7 @@ html {
 
 button {
     font-family: monospace;
+    vertical-align: text-top;
 
 }
 
@@ -86,6 +87,19 @@ h1, h2 ,h3, a {
 
 }
 
+#directory {
+    border-color: #d5d5d5;
+    border-width: 15px 1px 1px 1px;
+    border-style: solid;
+    width: 600px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 15px;
+    float: left;
+    background-color: white;
+}
+
 #calendar {
     border-color: #d5d5d5;
     border-width: 15px 1px 1px 1px;
@@ -95,10 +109,37 @@ h1, h2 ,h3, a {
     margin-left: auto;
     margin-right: auto;
     margin: 15px;
+    float: left;
 }
 
-navl a {
-    
+#navdir {
+    color: black;
+    font-family:monospace;
+    text-align: left;
+    width: 100%;
+    border-color: #d5d5d5;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+}
+
+.naviconbox {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
+
+
+
+.dirico {
+    width: 60px;
+    padding: 10px;
+}
+
+.navdirtxt {
+    font-family: monospace;
+    font-weight: 100;
+    color: black;
 }
 
 .navele {
