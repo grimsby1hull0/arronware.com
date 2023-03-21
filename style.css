@@ -122,6 +122,17 @@ h1, h2 ,h3, a {
     border-style: solid;
 }
 
+.navdirselect {
+    color: black;
+    font-family: monospace;
+}
+
+.navdirselect:hover {
+    color: black;
+    font-family: monospace;
+    text-decoration: underline;
+}
+
 .naviconbox {
     width: 100px;
     height: 100px;
@@ -198,5 +209,23 @@ img {
 
     iframe {
         width: 200px;
+    }
+    
+    #directory {
+        width: 90%;
+        height: 100%;
+    }
+
+    #calendar {
+        display: none;
+    }
+
+    #navbox {
+        display: none;
+    }
+
+    .naviconbox {
+        margin: 10px;
+        padding-bottom: 15px;
     }
 }

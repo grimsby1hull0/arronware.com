@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<body>
+    <head>
+        <link href="style.css" rel="stylesheet">
+
+        <title>Arron Ware.com</title>
+        <link rel="icon" href="floppy.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+
+
+    <div id="title">
+        <h1 id="titletxt">Arron Ware</h1>
+        
+    </div>
+
+    <form id="form" role="search">
+        <input type="search" id="query" name="q"
+        placeholder="Search..."
+        aria-label="Search through site content">
+        <button>Search</button>
+    </form>
+
+    
+    
+    <div id="navbox">
+        <div id="navl">
+            <a href="https://photography.morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="35mm film.ico">  Photography</div> </a>
+            <br>
+            <a href="https://cloud.morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="cloud.ico">  Cloud</div> </a>
+            <br>
+            <a href="https://social.chinwag.org/@grimsby1hull0"><div class="navele"><img  class="navico" src="Stylewriter 2.ico">  Mastodon</div> </a>
+            <br>
+            <a href="https://letterboxd.com/grimsby4hull0/"><div class="navele"><img  class="navico" src="Image file.ico">  Letterboxd</div> </a>
+            <br>
+            <a href="https://github.com/grimsby1hull0"><div class="navele"><img  class="navico" src="github.ico">  Github</div> </a>
+            <br>
+            <a href="https://archive.org/details/@vermontvarmint?tab=uploads"><div class="navele"><img  class="navico" src="video stack.ico">  Archive.org</div> </a>
+        
+
+
+
+
+
+            <a href="https://morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="WOC6 Internet Folder.ico">  More Sites</div> </a>
+        
+        </div>
+
+    </div>
+
+    <div id="calendar">
+
+    
+    <iframe src="https://perpetual.day#moof" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="400px" allowfullscreen></iframe>
+    </div>
+
+    <div id="directory">
+        <h3 id="navdir"><a class="navdirselect"href="index.html">index.html</a>/sites.html</h3>
+
+
+        <a href="https://photography.morewebsitesaboutbuildingsandfood.com/">
+            <div class="naviconbox">
+                <img  class="dirico" src="35mm film.ico">
+                <h3 class="navdirtxt">Photography</h3>
+            </div>
+        </a>
+
+
+        <a href="https://cloud.morewebsitesaboutbuildingsandfood.com/">
+            <div class="naviconbox">
+                <img  class="dirico" src="cloud.ico">
+                <h3 class="navdirtxt">Cloud Server</h3>
+            </div>
+        </a>
+
+        <a href="https://icons.morewebsitesaboutbuildingsandfood.com/">
+            <div class="naviconbox">
+                <img  class="dirico" src="iconempor.ico">
+                <h3 class="navdirtxt">Icon Emporium
+                </h3>
+            </div>
+        </a>
+
+        <a href="https://metamatic.morewebsitesaboutbuildingsandfood.com/">
+            <div class="naviconbox">
+                <img  class="dirico" src="metamatic.ico">
+                <h3 class="navdirtxt">Metamatic</h3>
+            </div>
+        </a>
+
+        <a href="https://pacifica.morewebsitesaboutbuildingsandfood.com/">
+            <div class="naviconbox">
+                <img  class="dirico" src="pacifica.ico">
+                <h3 class="navdirtxt">Pacifica</h3>
+            </div>
+        </a>
+
+        
+
+
+    </div>
+</body>
+
+<script>
+    const f = document.getElementById('form');
+    const q = document.getElementById('query');
+    const google = 'https://www.google.com/search?q=';
+    const site = '';
+
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + '+' + q.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+
+    f.addEventListener('submit', submitted);
+  </script>
+
+
