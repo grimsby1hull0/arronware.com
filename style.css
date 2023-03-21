@@ -84,8 +84,13 @@ h1, h2 ,h3, a {
 
 }
 
-#navl {
-    
+#calendar {
+    border-color: #d5d5d5;
+    border-width: 15px 1px 1px 1px;
+    border-style: solid;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 navl a {
