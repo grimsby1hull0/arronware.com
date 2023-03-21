@@ -47,7 +47,18 @@ html {
     
 }
 
+#query {
+    padding: 5px;
+    border-color: #d5d5d5;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+}
 
+button {
+    font-family: monospace;
+
+}
 
 h1, h2 ,h3, a {
     color: black;
@@ -69,6 +80,8 @@ h1, h2 ,h3, a {
     color: black;
     margin-right: 3px;
     position: sticky;
+    
+
 }
 
 #navl {
@@ -122,5 +135,7 @@ img {
 
 
 @media (min-width: 320px) and (max-width: 999px) {
-
+    #navbox {
+        margin: 10px;
+    }
 }

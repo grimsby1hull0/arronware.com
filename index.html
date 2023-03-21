@@ -1,59 +1,71 @@
 <!DOCTYPE html>
+<body>
+    <head>
+        <link href="style.css" rel="stylesheet">
 
-<head>
-    <link href="style.css" rel="stylesheet">
-
-    <title>Arron Ware.com</title>
-    <link rel="icon" href="floppy.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-
-<div id="title">
-    <h1 id="titletxt">Arron Ware</h1>
-    
-</div>
-
-<form id="form" role="search">
-    <input type="search" id="query" name="q"
-     placeholder="Search..."
-     aria-label="Search through site content">
-    <button>Search</button>
-  </form>
-
-<!-- <h3>Hi, hello <br> 
-This site was written entirely onto a 720kb floppy disk as a bit of a fun challenge. <br>
-Wasn't feasible hosting it live on the floppy disk sadly but I would've loved to. -->
-
-<!-- <br><br>
-
-Here are some links that you might be interested in having a look at</h3> -->
-
-<div id="navbox">
-    <div id="navl">
-        <a href="https://photography.morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="35mm film.ico">  Photography</div> </a>
-        <br>
-        <a href="https://cloud.morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="aquarium.ico">  Cloud</div> </a>
-        <br>
-        <a href="https://social.chinwag.org/@grimsby1hull0"><div class="navele"><img  class="navico" src="Stylewriter 2.ico">  Mastodon</div> </a>
-        <br>
-        <a href="https://letterboxd.com/grimsby4hull0/"><div class="navele"><img  class="navico" src="Image file.ico">  Letterboxd</div> </a>
-        <br>
-        <a href="https://github.com/grimsby1hull0"><div class="navele"><img  class="navico" src="github.ico">  Github</div> </a>
-        <br>
-        <a href="https://archive.org/details/@vermontvarmint?tab=uploads"><div class="navele"><img  class="navico" src="video stack.ico">  Archive.org</div> </a>
-    
+        <title>Arron Ware.com</title>
+        <link rel="icon" href="floppy.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
 
 
-
-
-
-        <a href="https://morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="WOC6 Internet Folder.ico">  More Sites</div> </a>
-    
+    <div id="title">
+        <h1 id="titletxt">Arron Ware</h1>
+        
     </div>
 
+    <form id="form" role="search">
+        <input type="search" id="query" name="q"
+        placeholder="Search..."
+        aria-label="Search through site content">
+        <button>Search</button>
+    </form>
+
     
 
-</div>
+    <div id="navbox">
+        <div id="navl">
+            <a href="https://photography.morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="35mm film.ico">  Photography</div> </a>
+            <br>
+            <a href="https://cloud.morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="aquarium.ico">  Cloud</div> </a>
+            <br>
+            <a href="https://social.chinwag.org/@grimsby1hull0"><div class="navele"><img  class="navico" src="Stylewriter 2.ico">  Mastodon</div> </a>
+            <br>
+            <a href="https://letterboxd.com/grimsby4hull0/"><div class="navele"><img  class="navico" src="Image file.ico">  Letterboxd</div> </a>
+            <br>
+            <a href="https://github.com/grimsby1hull0"><div class="navele"><img  class="navico" src="github.ico">  Github</div> </a>
+            <br>
+            <a href="https://archive.org/details/@vermontvarmint?tab=uploads"><div class="navele"><img  class="navico" src="video stack.ico">  Archive.org</div> </a>
+        
 
+
+
+
+
+            <a href="https://morewebsitesaboutbuildingsandfood.com/"><div class="navele"><img  class="navico" src="WOC6 Internet Folder.ico">  More Sites</div> </a>
+        
+        </div>
+
+    </div>
+
+
+    <iframe src="https://perpetual.day#moof" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+</body>
+
+<script>
+    const f = document.getElementById('form');
+    const q = document.getElementById('query');
+    const google = 'https://www.google.com/search?q=';
+    const site = '';
+
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + '+' + q.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+
+    f.addEventListener('submit', submitted);
+  </script>
 
 
