@@ -300,6 +300,15 @@ th img {
 }
 
 
+
+#contactimg {
+    margin: 20px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
 @media (min-width: 320px) and (max-width: 999px) {
 
 html {
