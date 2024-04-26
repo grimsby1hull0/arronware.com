@@ -309,13 +309,58 @@ th img {
 
 
 
+
+
+
+
+
+
+
+
 #contactimg {
-    margin: 20px;
+    
     border-width: 5px;
     border-style: solid;
     border-color: white;
     border-radius: 10px;
 }
+
+#contact {
+    display: flex;
+    margin: 20px;
+    
+}
+
+#contactleft {
+    float: left;
+    width: 40%;
+}
+
+#contactright {
+    float: right;
+    text-align: left;
+    width: 60%;
+    padding: 20px;
+
+}
+
+.contactoption {
+    font-family: vollkorn;
+    color: #bb5f28;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.contactoption:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
 @media (min-width: 320px) and (max-width: 1200px) {
 
