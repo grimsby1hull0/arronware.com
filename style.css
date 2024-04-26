@@ -211,6 +211,7 @@ footer {
     margin-right: auto;
     display: flex;
     justify-content: center;
+    width: 90%;
 }
 
 #description-img{
@@ -369,7 +370,7 @@ th img {
 @media (min-width: 320px) and (max-width: 1200px) {
 
 html {
-    background-size: 150px;
+    background-size: 300px;
 }
 
 
