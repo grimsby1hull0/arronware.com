@@ -328,13 +328,15 @@ footer {
 #videoshowcase {
 
     text-align: center;
-    width: 60%;
-    height: fit-content;
+    width: 90%;
+   
     border-width: 5px;
     border-style: solid;
     border-color: white;
     border-radius: 5px;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #ytvideo {
