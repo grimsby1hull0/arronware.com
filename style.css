@@ -226,7 +226,7 @@ video {
 }
 
 #showcasetext {
-    width: 30%;
+    
     padding: 10px;
 
     font-family: vollkorn;
@@ -328,18 +328,20 @@ th img {
 #contact {
     display: flex;
     margin: 20px;
-    
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 #contactleft {
     float: left;
-    width: 40%;
+    width: 60%;
 }
 
 #contactright {
     float: right;
     text-align: left;
-    width: 60%;
+    width: 50%;
     padding: 20px;
 
 }
