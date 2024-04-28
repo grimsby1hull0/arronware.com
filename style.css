@@ -251,7 +251,7 @@ video {
     width: 60%;
     min-height: 110px;
     background-color: #e9874c;
-    background: linear-gradient(to bottom, #e9874c, #ff9f65);
+    background: linear-gradient(to bottom, #f59054, #ff9f65);
     border-width: 10px;
     border-radius: 5px;
     display: flex;
