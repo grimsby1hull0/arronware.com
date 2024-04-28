@@ -367,6 +367,32 @@ th img {
 
 
 
+/*  QUOTE BOXES */
+
+.quotebox {
+    margin: 30px;
+    
+}
+
+.quote {
+    text-align: center;
+    font-size: medium;
+    color: white;
+}
+
+.quoter {
+    color: #bb5f28;
+    text-align: center;
+    font-size: small;
+    padding-top: 6px;
+}
+
+
+
+
+
+
+
 @media (min-width: 320px) and (max-width: 1200px) {
 
 html {
