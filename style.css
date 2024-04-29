@@ -521,8 +521,13 @@ footer {
     padding: 0px;
 }
 
+.contactoption {
+    padding: 2px;
+}
 
-
+#contact {
+    width: 92%;
+}
 
 
 }
