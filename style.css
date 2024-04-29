@@ -531,3 +531,22 @@ footer {
 
 
 }
+
+#artistcvbutton {
+    background-color: #e78850;
+    color: white;
+    padding: 10px;
+    font-family: 'vollkorn';
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#artistcvbutton:hover {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    background-color: #f38f55;
+}
+
