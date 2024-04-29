@@ -330,6 +330,23 @@ th img {
 
 }
 
+#attributebox {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#attribution {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+#attribution:hover {
+    text-decoration: underline;
+    color: white;
+}
 
 
 #contactimg {
