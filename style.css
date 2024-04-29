@@ -318,6 +318,20 @@ th img {
 
 
 
+
+
+#instagram {
+    background-image: url(assets/instagram.ico);
+}
+
+.icon {
+    width: 30px;
+    
+
+}
+
+
+
 #contactimg {
     
     border-width: 5px;
