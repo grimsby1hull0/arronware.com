@@ -127,17 +127,64 @@ footer {
     background-color: #e9874c;
     width: 70%;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 5px;
     border-radius: 0px 0px 15px 15px;
     color: white;
 }
-#footl {
-    text-align: left;
+
+#footbox {
+    margin: 10px;
+    height: 80px;
+    display: inline-flex;
 }
 
-#footr {
-    text-align: right;
+#footlogo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
 }
+
+#footer-left {
+    float: right;
+    display: inline-block;
+    margin-right: auto;
+    height: 100%;
+    padding: 20px;
+}
+
+
+#footer-right {
+    float: left;
+    display: inline-block;
+    margin-left: auto;
+    height: 100%;
+    padding: 20px;
+}
+
+.footer-link {
+    color: white;
+    vertical-align: middle;
+    padding: 10px;
+
+    
+
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    font-style: italic;
+    
+}
+
+#copyrighttag {
+    font-size: 15px;
+    padding: 3px;
+    text-align: right;
+    font-family: 'vollkorn';
+    font-weight: 100;
+}
+
+
 
 #homeimg {
     margin: 30px;
@@ -455,6 +502,7 @@ footer {
     width: 95%;
     margin-bottom: 150px;
 }
+
 
 #videoshowcase {
 
