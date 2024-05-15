@@ -141,7 +141,7 @@ footer {
 #footlogo {
     margin-left: auto;
     margin-right: auto;
-    width: 80px;
+    width: 100px;
 }
 
 #footer-left {
@@ -166,6 +166,7 @@ footer {
     vertical-align: middle;
     padding: 10px;
 
+
     
 
 }
@@ -173,6 +174,8 @@ footer {
 .footer-link:hover {
     text-decoration: underline;
     font-style: italic;
+    border-width: 0px;
+
     
 }
 
@@ -485,8 +488,9 @@ th img {
     width: 97%;
 }
 
+
 #titleprops {
-    
+    border-width: 3px 5px 3px 5px;
 }
 
 html {
@@ -503,6 +507,29 @@ footer {
     margin-bottom: 150px;
 }
 
+#footbox {
+    height: 110px;
+}
+
+.footer-link {
+    padding: 0px;
+}
+
+#footer-right {
+    padding: 10px;
+    display: grid;
+}
+
+#footer-left {
+    padding: 10px;
+    display: grid;
+}
+
+#footlogo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
 
 #videoshowcase {
 
@@ -592,6 +619,8 @@ footer {
 #contact {
     width: 92%;
 }
+
+
 
 
 }
