@@ -552,6 +552,7 @@ html {
 
 #home {
     width: 95%;
+    min-height: 100%;
 }
 
 footer {
