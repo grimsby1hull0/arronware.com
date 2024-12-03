@@ -521,20 +521,41 @@ th img {
     margin-bottom: 5px;
 }
 
-.tall {
-    width: 30%;
-    margin: 2px;
+#photographysitelink {
+    color: white;
+    text-align: center;
+    background-color: #e9874c;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 7px;
+    font-style: italic;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
-.wide {
-    width: 40%;
-    margin: 2px;
+#photographysitelink:hover {
+    background-color: #fda26a;
+    transition: 1s;
+    
 }
 
 
 
 
 @media (min-width: 320px) and (max-width: 1200px) {
+
+
+#photographyshowcase {
+    height: 44%;
+    width: 95%;
+    padding: 0px;
+}
+
+#photographysitelink {
+    width: 70%;
+    margin-bottom: 10px;
+}
 
 #sitetitle {
     width: 97%;
@@ -673,11 +694,6 @@ footer {
     width: 92%;
 }
 
-#photographyshowcase {
-    height: 44%;
-    width: 80%;
-    padding: 0px;
-}
 
 
 }
@@ -699,4 +715,5 @@ footer {
     border-style: solid;
     background-color: #f38f55;
 }
+
 
