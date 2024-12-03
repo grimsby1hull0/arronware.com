@@ -478,6 +478,18 @@ th img {
 
 
 
+/* PHOTOGRAPHY */
+#photographyshowcase {
+    width: 90%;
+}
+
+.tall {
+    width: 10%;
+}
+
+.wide {
+    width: 30%;
+}
 
 
 
@@ -582,7 +594,7 @@ footer {
 #navbar a {
     font-weight: 600;
     font-family: vollkorn;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 10px 0px 5px;
     color: #bb5f28;
     font-size: x-large;
     
