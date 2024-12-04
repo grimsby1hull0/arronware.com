@@ -531,19 +531,25 @@ th img {
     padding: 7px;
     font-style: italic;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 #photographysitelink:hover {
     background-color: #fda26a;
-    transition: 1s;
+    transition: 0.5s;
     
 }
 
 
+@media (min-width: 801px) and (max-width: 1200px) {
+    #photographysitelink {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+}
 
 
-@media (min-width: 320px) and (max-width: 1200px) {
+@media (min-width: 320px) and (max-width: 800px) {
 
 
 #photographyshowcase {
