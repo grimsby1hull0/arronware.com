@@ -1,3 +1,33 @@
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+</script>
+
 <html>
     <head>
         <title>Arron Ware: Biography</title>
@@ -79,54 +109,11 @@
         </div>
         
         <footer>
-            <div id="footbox">
-                <div id="footer-left">
-                    <a href="https://photography.arronware.com/" class="footer-link">photography</a>
-                    <a href="https://www.linkedin.com/in/arron-ware-a573b3224/" class="footer-link">linkedin</a>
-                </div>
-                <div id="footlogo"><img src="assets/img/logotext.png" alt="Arron Ware's Logo" width="100%" height="auto"></div>
-                <div id="footer-right">
-                    <a href="https://www.instagram.com/foleyware/" class="footer-link">instagram</a>
-                    <a href="https://arronware.bandcamp.com/" class="footer-link">bandcamp</a>
-                </div>
-            </div>
-            <br>
-            <h6 id="copyrighttag">Arron Ware &copy; 2024 </h6>
+            <div w3-include-html="footer.html"></div>
 
         </footer>
         
 
-
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("demo");
-              let captionText = document.getElementById("caption");
-              if (n > slides.length) {slideIndex = 1}
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";
-              dots[slideIndex-1].className += " active";
-              captionText.innerHTML = dots[slideIndex-1].alt;
-            }
-            </script>
 
     </body>
 
@@ -134,3 +121,7 @@
 
 
 </html>
+
+<script>
+    includeHTML();
+</script>
