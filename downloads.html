@@ -1,0 +1,96 @@
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+</script>
+
+<html>
+    <head>
+        <title>Arron Ware: Biography</title>
+        <link rel="icon" href="assets/icon.ico">
+
+        <link href="style.css" rel="stylesheet">
+
+        <meta property="og:image"  content="https://arronware.com/assets/widgetpreview.jpg" />
+        <meta name="description" content="Arron Ware's home on the internet">
+        <meta name="keywords" content="arron, ware, photography, nikon, d90, f90x, film, camera, urban, landscape, portrait, england, grimsby, lincolnshire, cleethorpes, music, sound, design, manchester">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Arron Ware">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+
+    <body>
+        <div id="sitetitle"><img id="titleprops" src="assets/sitetitle.jpg" alt="website title"  width="100%" style="margin-left: auto; margin-right: auto; display: block;"></div>
+        <div id="home">
+            <div id="navbar">
+                <a href="index.html">biography</a>
+                <a href="web.html">web</a>
+                <a href="photography.html">photography</a>
+                <a href="music_and_sound.html">sound</a>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="line"></div>
+
+            
+            <h2 id="description">Downloads</h2>
+
+            <a href="dream tangerine FINAL final vocal boosted.wav" ><h2 id="photographysitelink">Composition</h2></a>
+
+            
+
+
+            
+
+            
+
+
+            
+            
+        </div>
+        
+        <footer>
+            
+            <div w3-include-html="footer.html"></div>
+
+        </footer>
+        
+
+
+    </body>
+
+
+
+
+</html>
+
+<script>
+    includeHTML();
+</script>
