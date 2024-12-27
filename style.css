@@ -95,7 +95,7 @@ html {
     font-size: xx-large;
 }
 
-#description {
+.description {
     font-family: vollkorn;
     color: #bb5f28;
     text-align: center;
@@ -106,6 +106,9 @@ html {
 content {
     
 }
+
+
+
 
 #home {
     width: 70%;
@@ -555,6 +558,12 @@ th img {
     border-radius: 10px;
     margin-bottom: 3px;
     transition: 0.4s;
+    font-family: vollkorn;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: block;
 }
 
 .weblinks:hover {
@@ -562,13 +571,24 @@ th img {
     transition: 0.5s;
 }
 
+#webquotes {
+    justify-content: space-evenly;
+    display: flex;
+}
 
+.webgalleryimg {
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex;
+    border-radius: 10px;
+}
 
+#webgallery {
+    justify-content: space-evenly;
 
+}
 
-
-
-
+/* FIX THE WEB GALLERY FLEX STUFF MAYBE??? */
 
 
 
