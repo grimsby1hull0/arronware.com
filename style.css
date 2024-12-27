@@ -379,6 +379,12 @@ th img {
 
 
 
+
+
+
+
+
+
 #instagram {
     background-image: url(assets/instagram.ico);
 }
@@ -539,6 +545,32 @@ th img {
     transition: 0.5s;
     
 }
+
+
+
+.weblinks {
+    color: white;
+    background-color: #e78850;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 3px;
+    transition: 0.4s;
+}
+
+.weblinks:hover {
+    background-color: #fda26a;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 801px) and (max-width: 1200px) {
