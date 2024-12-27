@@ -457,9 +457,11 @@ th img {
 
 .contactoption {
     font-family: vollkorn;
-    color: #bb5f28;
-    padding: 20px;
+    color: white;
+    padding: 5px;
     font-size: 25px;
+    margin: 40px;
+    border-radius: 17px;
 }
 
 .contactoption:hover {
@@ -754,7 +756,7 @@ footer {
 }
 
 .contactoption {
-    ;
+    
 }
 
 #contact {
@@ -762,7 +764,7 @@ footer {
 }
 
 
-
+}
 
 
 #artistcvbutton {
