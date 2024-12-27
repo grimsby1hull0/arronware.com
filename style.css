@@ -289,9 +289,8 @@ video {
 }
 
 #showcasetext {
-    
     padding: 10px;
-
+    width: 40%;
     font-family: vollkorn;
     color: #bb5f28;
 }
@@ -310,17 +309,27 @@ video {
 /* OLD VIDEO BOXES, M&S Design */
 
 .oldvideos /* PARENT */ {
-    width: 60%;
+    width: 70%;
     min-height: 110px;
-    background-color: #e9874c;
+    
     background: linear-gradient(to bottom, #f59054, #ff9f65);
-    border-width: 10px;
-    border-radius: 5px;
+    border-width: 1px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    transition-duration: 0.5s;
+}
+
+.oldvideos:hover {
+    background: #e9874c;
+    transition-duration: 0.1s;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    
 }
 
 .oldvidbox {
@@ -745,7 +754,7 @@ footer {
 }
 
 .contactoption {
-    padding: 2px;
+    ;
 }
 
 #contact {
@@ -754,7 +763,7 @@ footer {
 
 
 
-}
+
 
 #artistcvbutton {
     background-color: #e78850;
@@ -765,6 +774,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 80%;
 }
 
 #artistcvbutton:hover {
