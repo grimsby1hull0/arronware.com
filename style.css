@@ -505,8 +505,8 @@ th img {
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    display: block;
-    height: 83%;
+    height: fit-content;
+    overflow: auto;
     /* background-color: beige; */
 }
 
@@ -514,7 +514,7 @@ th img {
     float: left;
     display: block;
     /* background-color: green; */
-    height: 100%;
+    height: fit-content;
     width: 25%;
 }
 
@@ -523,9 +523,11 @@ th img {
     float: right;
     display: block;
     /* background-color: maroon; */
-    height: 100%;
+    height: fit-content;
     width: 74%;
 }
+
+
 
 .photogalleryele {
     display: block; 
@@ -616,14 +618,28 @@ th img {
 
 
 #photographyshowcase {
-    height: 44%;
+    
     width: 95%;
     padding: 0px;
+    overflow: hidden;
+    height: fit-content;
 }
 
 #photographysitelink {
     width: 70%;
     margin-bottom: 10px;
+}
+
+#photogleft {
+    height: fit-content;
+}
+
+#photogright {
+    height: fit-content;
+}
+
+.description #photodesc {
+    display: inline-block;
 }
 
 #sitetitle {
