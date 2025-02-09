@@ -695,7 +695,9 @@ th img {
 
 
 
-
+#audioytdiv {
+    width: inherit;
+}
 
 
 
@@ -828,6 +830,11 @@ footer {
 
 #ytdiv {
     border-style: none;
+    width: 500px ;
+}
+
+#audioytdiv {
+    width: 100% !important;
 }
 
 #showcasetext {
