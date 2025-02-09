@@ -701,7 +701,14 @@ th img {
 
 
 
+.webquote {
+    display: block;
+}
 
+.webquotemob {
+    display: none;
+    font-size: small;
+}
 
 
 /* FIX THE WEB GALLERY FLEX STUFF MAYBE??? */
@@ -727,6 +734,21 @@ th img {
     width: 80%;
 }
 
+.webcommbox {
+    height: 140px;
+}
+
+.webquote {
+    display: none;
+}
+
+.webquotemob {
+    display: block;
+    font-size: small;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+}
 
 #photographyshowcase {
 
