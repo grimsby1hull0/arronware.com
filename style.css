@@ -254,7 +254,7 @@ footer {
 #videoshowcase {
     text-align: center;
     width: 60%;
-    height: fit-content;
+    height: intrinsic;
     border-width: 5px;
     border-style: solid;
     border-color: white;
@@ -377,7 +377,7 @@ th {
 
 th img {
     width: 150px;
-    border-width: 5px;
+    border-width: 2px;
     border-style: solid;
     border-color: white;
     border-radius: 5px;
