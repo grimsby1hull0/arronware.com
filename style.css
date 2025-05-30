@@ -254,7 +254,7 @@ footer {
 #videoshowcase {
     text-align: center;
     width: 60%;
-    height: intrinsic;
+    height: fit-content;
     border-width: 5px;
     border-style: solid;
     border-color: white;
@@ -268,6 +268,8 @@ footer {
     border-style: solid;
     border-color: white;
     border-radius: 5px;
+    width: 70%;
+    height: fit-content;
 }
 
 #showcase {
@@ -727,10 +729,80 @@ th img {
         width: 70%;
         margin-bottom: 10px;
     }
+
+}
+
+@media (min-width: 80px) and (max-width: 1100px) {
+    #ytdiv {
+    width: 100%;
+    }
+
+    #home {
+        width: 85%;
+    }
+
+    footer {
+        width: 85%;
+    }
+
+    #showcasetext {
+    width: auto ;
+    }
+
+    #videoshowcase {
+
+    text-align: center;
+    width: 90%;
+
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ytvideo {
+    text-align: center;
+    width: 90%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#ytdiv {
+    width: 100%;
+}
+
+#audioytdiv {
+    width: 100% !important;
+}
+
+#showcasetext {
+    width: auto ;
 }
 
 
-@media (min-width: 320px) and (max-width: 800px) {
+#showcase {
+    display: block;
+}
+
+.oldvideos {
+    width: 90%;
+}
+}
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 800px) {
 
 
 .quote {
@@ -873,8 +945,7 @@ footer {
 }
 
 #ytdiv {
-    border-style: none;
-    width: 500px ;
+    width: 100%;
 }
 
 #audioytdiv {
