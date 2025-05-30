@@ -645,7 +645,7 @@ th img {
     height: 200px;
     width: 100%;
     padding: 20px;
-    display: flex;
+    display: inline-table;
     
 }
 
@@ -653,17 +653,22 @@ th img {
 
 
 .webquoteL {
-    float: left;
-    width: 70%;
+    text-align: center;
+    
     /* background-color: green; */
 
 }
 
 .weblogoR {
     width: 30%;
-    float: right;
+    margin-right: auto;
+    margin-left: auto;
     /* background-color: red; */
     padding: 10px;
+}
+
+.weblogomob {
+    display: none;
 }
 
 .webquote {
@@ -736,19 +741,35 @@ th img {
 }
 
 .webcommbox {
-    height: 140px;
+    height: fit-content;
 }
 
 .webquote {
     display: none;
 }
 
+.webquoteL {
+    width: 100%;
+}
+
+.weblogomob {
+    display: block;
+}
+
+.weblogoR {
+    display: none;
+}
+
 .webquotemob {
     display: block;
-    font-size: small;
+    font-size: larger;
     text-align: center;
     color: white;
     font-weight: 200;
+}
+
+.webquoter {
+    font-size: medium;
 }
 
 #photographyshowcase {
