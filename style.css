@@ -637,9 +637,9 @@ th img {
 #parentprewebbox {
     padding: 20px;
     margin: 20px;
-    border-style: solid;
+    /* border-style: solid;
     border-color: white;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 
 .webcommbox {
@@ -648,7 +648,7 @@ th img {
     width: 100%;
     padding: 20px;
     display: inline-table;
-    
+    border-radius: 20px;
 }
 
 
