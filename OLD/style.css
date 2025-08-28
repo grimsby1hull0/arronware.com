@@ -7,6 +7,7 @@
 
 html {
     background-color:rgb(143, 139, 255);
+    
 }
 
 #title {
@@ -145,6 +146,12 @@ h1, h2 ,h3, a {
 .dirico {
     width: 60px;
     padding: 10px;
+    image-rendering: pixelated;
+}
+
+.dirico:hover {
+    transition-duration: 0.05s;
+    transform: translateY(-2px);
 }
 
 .navdirtxt {
@@ -169,6 +176,7 @@ h1, h2 ,h3, a {
     width: 20px;
     padding: 2px;
     vertical-align: super;
+    image-rendering: pixelated;
 }
 
 

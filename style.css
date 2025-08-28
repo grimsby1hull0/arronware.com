@@ -678,13 +678,15 @@ th img {
     color: white;
     font-size: larger;
     font-weight: 100;
+    font-family: 'vollkorn';
 }
 
 .webquoter {
     color: #bb5f28;
     text-align: center;
-    font-size: small;
+    font-size: inherit;
     padding-top: 6px;
+    font-family: sans-serif;
 }
 
 
@@ -915,6 +917,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 120px;
+    rotate:  0deg;
 }
 
 #videoshowcase {
