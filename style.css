@@ -714,7 +714,13 @@ th img {
 
 
 #audioytdiv {
-    width: inherit;
+    width: 40%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffc877;
+    background-color: #ffc877;
+    padding: 5px;
+    border-radius: 0px 0px 30px 30px;
 }
 
 
@@ -806,6 +812,16 @@ th img {
 .oldvideos {
     width: 90%;
 }
+
+
+#whitebar {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 100px;
+}
+
+
 }
 
 
@@ -857,7 +873,7 @@ th img {
 #photographyshowcase {
 
     width: 95%;
-    padding: 0px;
+    padding: 0px 5px 0px 0px;
     overflow: hidden;
     height: fit-content;
 }
