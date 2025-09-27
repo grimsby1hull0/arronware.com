@@ -1,0 +1,183 @@
+Hi Neil,
+
+ 
+
+I was wondering if you had any advice for recording thunder and rain. 
+
+ 
+
+Me and Chris Gray are organizing a trip to the peak district in an attempt to record these. 
+
+ 
+
+So far we have a 32bit Zoom field recorder and it's built in microphones, I was curious if you had any recommendations of microphones to get/use for doing this in future that are good value for money, alongside any advice regarding recording practices for wide stereo fields and detailed, dynamic, ambience recording in general.
+
+ 
+
+I also own a Blue Yeti USB microphone but I assume that wouldn't have a wide dynamic range, from what I've read at least.
+
+ 
+
+Cheers,
+
+Arron 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hey Arron,
+
+Good to hear from you and good to hear about your project. Rain is not too bad to record but thunder can be a bit trickier.
+
+ 
+
+With rain you need to consider what it is that you are wanting to record, and from what perspective. Is it a general downpour? Or is it drops as they drip off surfaces such as roofs, drains or leaves. Do you want an overall perspective in which case drops on or near the microphone can be problematic. Also obviously trying to make sure that the recorder stays dry is probably most important (and the microphones). Therefore if you want to be in the field are you going to find a shelter when it rains, in which case you are recording the sound of the shelter as well. Just something to consider.
+
+ 
+
+Thunder is (or at least was) quite hard to record due to the wide dynamic range, as you have a 32 bit recorder this will be less of an issue, although the level may cause the microphones to clip before the preamp. Usually the approach is to ride the gain input on the recorder to make sure you aren’t clipping. It isn’t ideal but has been used as a method for a long time.
+
+ 
+
+Microphone wise, I would suggest looking at a set of omni microphones to begin with, Micboosters Clippy https://micbooster.com/product-category/clippy-and-pluggy-microphones/?v=ab6c04006660mics
+
+
+Clippy and Pluggy Microphones Archives - micbooster.com
+Microphones using the superb omni and cardioid Primo capsules
+micbooster.com
+can be a good starting point or Line Audio OM1s. Are you still able to check things our of the AV store? If so let me know and I will suggest a few from there.
+
+ 
+
+I wouldn’t use the Blue Yeti, also as it is USB you would need to take a laptop etc…not ideal in the rain or in the field.
+
+ 
+
+Hope that helps,
+
+ 
+
+All the best,
+
+Neil
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi Neil,
+
+ 
+
+Thanks for the very detailed advice 🙂, glad you've had experience with this.
+
+ 
+
+That reminds me, I forgot to get back to you about the Individual Project, if you're interested I recently popped it on my website.
+
+I'm not sure if you were involved in marking it so you might have already seen it!
+
+ 
+
+I'm not sure when my booking abilities come to an end, I seem to have permission up to October! 
+
+ 
+
+I think the general idea for this project is to capture something quite versatile.
+
+For my Gladwin sound design unit, we went out to Grindleford in the Peak District and recorded water flowing from the inside of a tunnel, alongside a small stream nearby and layered them to create a sense of distance and intensity. 
+
+ 
+
+It worked well but it resembled noise rather than rain which was a bit of a shame.
+
+ 
+
+The general goal is to record rain without any noise pollution from cities or towns, so we were considering the peak district again, is there any sort of cover you would recommend using instead of a tarp or anything? I'd imagine it would be quite loud, maybe some soft fabric like felt that we dry out afterward?
+
+ 
+
+Appreciate the advice 🙂,
+
+Arron
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi Arron,
+
+ 
+
+No worries. Great to see your IP, really good piece of work, I hope you are proud of it. Look forward to seeing what you create in the future.
+
+ 
+
+That sounds about right, I think it is up until the start of the new semester. As such I would look at borrowing some gear, in particular you might want to try the Zoom F6 with a couple of extra mic. The store doesn’t have the widest range, but you might want to try a stereo pair with the Rode NT5 or M5s, you will also need a stereo bar to attach them to. They aren’t omni, so you would look to use either XY, or I would suggest ORTF technique with them. You could also check out the hydrophone from the store which could give you some interesting recordings of rain on water for example or flowing water. I would also book out the Soundman OKM binaural mics, they can plug into your existing recorder (you will need to switch on plugin power which is in the menu…not phantom power). They are meant to be used binaurally (which you can) but they are omni mics so can also be used as a spaced pair.
+
+ 
+
+I would also suggest you might want to look at booking out the Zoom H3VR which is a standalone ambisonics recorder, but can convert (after the recording) to Stereo, Binaural or anything else. It is not the quietest of recorders but can give really spacious recordings.
+
+ 
+
+Rain will sound like white noise depending on the intensity, this is something that you will have to figure out on the day, it seems like you are interested more in the lighter rainfall and drops. You can get this even before a large heavy rain shower occurs and then after the storm peaks, I would record it all if possible.
+
+ 
+
+With covering a mic, with a tarp or plastic bag for instance, you will create a new sound which is the rain on the bag. Fabric would work but only briefly and the rain would seep through. Some recordists will place recorders in foliage and the cover with layers of bigger leaves, but even then, you are now recording the sound of rain on leaves. It is all really about practice and decision making.
+
+ 
+
+As for trying to record without human sounds….welcome to the biggest problem in nature sound recording. There are very few places in the UK where you can record without the influence of man made sound, from industry, distant roads and motorways and flight paths. The peak district can be quiet but it will be hard to get rid of all man made noise pollution. I have attempted a lot of these types of recordings, one recently for a project which was attempting to recreate the 18th century soundscapes in the Lake District, I mostly failed to get anything without needing to do some post processing, most of the recordings were made from about 4-6am.
+
+ 
+
+Good luck with it and let me know if you have any more questions.
+
+Cheers
+
+Neil
