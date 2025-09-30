@@ -29,6 +29,21 @@
     }
 </script>
 
+<script>
+function swapDivs(showId, hideId, button) {
+  document.getElementById(showId).style.display = 'inline'; 
+  document.getElementById(hideId).style.display = 'none';
+
+  // Reset all buttons
+  document.querySelectorAll('.sound-title').forEach(btn => btn.classList.remove('active'));
+
+  // Highlight the one that was clicked
+  button.classList.add('active');
+}
+</script>
+
+
+
 <html>
     <head>
         <title>Arron Ware: Music & Sound</title>
@@ -61,10 +76,14 @@
             <div class="line"></div>
 
             
+            <div style="text-align: center; margin-bottom: 20px;">
+                <button class="sound-title active" onclick="swapDivs('project','articles', this)">Projects</button> 
+                <a style="color: white; text-align: center; font-size: xx-large; font-weight: 600; cursor: default;">|</a>
+                <button class="sound-title" onclick="swapDivs('articles','project', this)">Articles</button>
+            </div>
             
-            <h2 id="title">Projects</h2>
             
-            <content>
+            <content id="project" style="display: inline;">
 
                 <div id="showcase">
                     <!-- <video id="videoshowcase"  controls poster="assets/content/work/thmb.jpg">
@@ -216,10 +235,25 @@
 
             </content>
 
-
-            <div id="projectpreview">
+            <content id="articles" style="display: none;">
+                <h2 class="description">I really enjoy experimenting with all things relating to audio, especially from a technical standpoint.<br>
+                    On this page, I will be writing helpful articles to share my findings and help others to improve their own abilities through my experiences.
+                </h2> 
+                <br>
+                <h3 style="color: white;">where is the content? ... it will be here soon, this is going to be a continuous project <br> that I would like to take my time with to ensure that it's a 
+                    high quality resource! :)
+                </h3>
                 
-            </div>
+
+                </div>
+
+
+
+
+
+
+            </content>
+            
 
             
 

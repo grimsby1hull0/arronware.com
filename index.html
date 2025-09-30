@@ -29,6 +29,8 @@
     }
 </script>
 
+
+
 <html>
     <head>
         <title>Arron Ware: Biography</title>
@@ -61,7 +63,8 @@
             <div class="line"></div>
 
             <div id="homeimg">
-                <img src="assets/londonjacket.jpg"  alt="Arron standing in front of a grammophone and an array of jackets whilst wearing tweed."  id="imginhome"> <!-- Make Image swap between piano picture and this at random! -->
+                <canvas class="canvas" width="1500" height="1000" id="imginhome"></canvas>
+                <span id="canvasAlt" style="position:absolute; left:-9999px;"></span> <!-- hidden for screen readers -->
             </div>
             
             <h2 class="description">Arron Ware is a multi-media artist from the North of England. <br>
@@ -95,6 +98,66 @@
 
 
 </html>
+
+<script>
+    // dont hate me, I just really liked the look of it and I promised myself I will learn canvas after putting this on my website as a constant reminder!
+const canvas = document.getElementsByClassName("canvas")[0]; // select first canvas by class
+const ctx = canvas.getContext("2d");
+const altText = document.getElementById("canvasAlt");
+
+const images = [
+    { src: "assets/pictureframe/londonjacket.jpg", alt: "A forest with tall trees" },
+    { src: "assets/pictureframe/barbicanIM.jpg", alt: "A calm lake with mountains" },
+    { src: "assets/pictureframe/violinIM.jpg", alt: "A sandy beach with waves" },
+    { src: "assets/pictureframe/doorIM.jpg", alt: "An open wooden door with sunlight" },
+    { src: "assets/pictureframe/logicIM.jpg", alt: "A Logic Pro music workspace" },
+    { src: "assets/pictureframe/pianoIM.jpg", alt: "A piano keyboard with sheet music" }
+];
+
+let index = 0;
+let currentImg = new Image();
+let nextImg = new Image();
+
+// Initialize first image
+currentImg.src = images[index].src;
+altText.textContent = images[index].alt;
+currentImg.onload = () => {
+    ctx.drawImage(currentImg, 0, 0, canvas.width, canvas.height);
+};
+
+function mergeToNextImage() {
+    index = (index + 1) % images.length;
+    nextImg.src = images[index].src;
+
+    nextImg.onload = () => {
+        let alpha = 0;
+        let step = 0.02; // transition speed
+
+        function animate() {
+            alpha += step;
+            if (alpha > 1) alpha = 1;
+
+            ctx.globalAlpha = 1;
+            ctx.drawImage(currentImg, 0, 0, canvas.width, canvas.height);
+
+            ctx.globalAlpha = alpha;
+            ctx.drawImage(nextImg, 0, 0, canvas.width, canvas.height);
+
+            if (alpha < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                currentImg.src = nextImg.src;
+                altText.textContent = images[index].alt;
+            }
+        }
+        animate();
+    };
+}
+
+// Change every 4 seconds
+setInterval(mergeToNextImage, 5000);
+
+</script>
 
 <script>
     includeHTML();

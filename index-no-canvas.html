@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+</script>
+
+
+
+<html>
+    <head>
+        <title>Arron Ware: Biography</title>
+        <link rel="icon" href="assets/icon.ico">
+
+        <link href="style.css" rel="stylesheet">
+
+        <meta property="og:image"  content="https://arronware.com/assets/widgetpreview.jpg" />
+        <meta name="description" content="Arron Ware's home on the internet">
+        <meta name="keywords" content="arron, ware, photography, nikon, d90, f90x, film, camera, urban, landscape, portrait, england, grimsby, lincolnshire, cleethorpes, music, sound, design, manchester">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Arron Ware">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+
+    <body>
+        <div id="sitetitle"><img id="titleprops" src="assets/sitetitle.jpg" alt="website title"  width="100%" style="margin-left: auto; margin-right: auto; display: block;"></div>
+        <div id="home">
+            <div id="navbar">
+                <a id="selected" href="index.html">biography</a>
+                <a href="web.html">web</a>
+                <a href="photography.html">photography</a>
+                <a href="music_and_sound.html">sound</a>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="line"></div>
+
+            <div id="homeimg">
+                <img src="assets/pictureframe/londonjacket.jpg"  alt="Arron standing in front of a grammophone and an array of jackets whilst wearing tweed." id="imginhome">
+            </div>
+            
+            <h2 class="description">Arron Ware is a multi-media artist from the North of England. <br>
+                He works primarily with Sound Design, Photography alongside Web Design. <br>
+                Arron is also well-versed with various Photo & Video Editing software and graphic design techniques.
+            </h2>
+
+            
+
+
+            
+
+            
+
+
+            
+            
+        </div>
+        
+        <footer>
+            
+            <div w3-include-html="footer.html"></div>
+
+        </footer>
+        
+
+
+    </body>
+
+
+
+
+</html>
+
+<script>
+  // 1. Array of images with alt text
+  const images = [
+    { src: "assets/pictureframe/londonjacket.jpg", alt: "A forest with tall trees" },
+    { src: "assets/pictureframe/barbicanIM.jpg", alt: "A calm lake with mountains" },
+    { src: "assets/pictureframe/violinIM.jpg", alt: "A sandy beach with waves" },
+    { src: "assets/pictureframe/doorIM.jpg", alt: "A sandy beach with waves" },
+    { src: "assets/pictureframe/logicIM.jpg", alt: "A sandy beach with waves" },
+    { src: "assets/pictureframe/pianoIM.jpg", alt: "A sandy beach with waves" }
+  ];
+
+  // 2. Keep track of which one is showing
+  let index = 0;
+
+  // 3. Reference to the <img> element
+  const imgElement = document.getElementById("imginhome");
+
+  // 4. Change image every 3 seconds
+  setInterval(() => {
+    index = (index + 1) % images.length; // wrap around
+    imgElement.src = images[index].src;
+    imgElement.alt = images[index].alt; // update accessibility text
+  }, 2000);
+</script>
+
+<script>
+    includeHTML();
+</script>

@@ -38,6 +38,21 @@ html {
     background-size: 525px;
 }
 
+h2 {
+    font-family: vollkorn;
+    color: #bb5f28;
+    text-align: center;
+}
+
+h3 {
+    font-family: vollkorn;
+    color: #bb5f28;
+    text-align: center;
+    font-size: smaller;
+}
+
+
+
 
 
 #navbar {
@@ -389,7 +404,37 @@ th img {
     border-radius: 5px;
 }
 
+.sound-title {
+    font-family: vollkorn;
+    color: #bb5f28;
+    font-weight: 600;
+    font-family: vollkorn;
+    padding: 5px;
+    font-size: x-large;
+    border-radius: 10px;
+    transition-duration: 0.05s;
+}
 
+.sound-title:hover {
+    background-color: rgb(255, 244, 234);
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.sound-title.active {
+    background-color: rgb(255 253 251);
+}
+
+.content-section {
+    display: none; /* hidden by default */
+}
+.content-section.active {
+    display: block; /* only the active one shows */
+}
+
+button {
+    all: unset;
+}
 
 
 
@@ -735,7 +780,9 @@ th img {
 }
 
 
-/* FIX THE WEB GALLERY FLEX STUFF MAYBE??? */
+
+
+
 
 
 
@@ -1077,3 +1124,28 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 2s ease-in-out;
+  opacity: 0;
+
+  /* Blend the colours for merging effect */
+  mix-blend-mode: screen;  /* you can experiment with overlay, lighten, multiply */
+}
+
+.slide.show {
+  opacity: 1;
+}
