@@ -766,6 +766,7 @@ button {
     background-color: #ffc877;
     padding: 5px;
     border-radius: 0px 0px 30px 30px;
+    height: fit-content;
 }
 
 
@@ -781,10 +782,101 @@ button {
 
 
 
+/* Sound stuff */
+
+/* photo showcase */
+
+#metroleftvert {
+    float: left; 
+    display: block; 
+    width: 30%; 
+    margin-right: 5px;
+    height: fit-content;
+}
+
+#metromiddlehori {
+    float: left; 
+    display: block; 
+    width: 38.5%;
+    height: fit-content;
+}
+
+#metrorightvert {
+    float: left; 
+    display: block; 
+    width: 30%; 
+    margin-left: 5px;
+    height: fit-content;
+}
+
+#soundphotoshowcase {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    height: fit-content;
+    overflow: auto;
+    display: none;
+}
+
+
+.soundphotogallery {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.desktopsoundphotogallery {
+    display: block;
+    width: 100%;
+    /* margin: 3px; */
+    margin-bottom: 5px;
+}
 
 
 
+@media (min-width: 1px) and (max-width: 1280px) {
 
+    #soundphotoshowcase {
+        width: 90%;
+        display: flex;
+    }
+
+    #metroleftvert {
+        float: left; 
+        display: block; 
+        width: 30%; 
+        margin-right: 5px;
+    }
+
+    #metromiddlehori {
+        float: left; 
+        display: block; 
+        width: 38.5%;
+    }
+
+    #metrorightvert {
+        float: left; 
+        display: block; 
+        width: 30%; 
+        margin-left: 5px;
+    }
+
+    .soundphotogallery {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .desktopsoundphotogallery {
+        display: none;
+        width: 100%;
+        /* margin: 3px; */
+        margin-bottom: 5px;
+    }
+
+}
 
 
 @media (min-width: 801px) and (max-width: 1200px) {
@@ -793,9 +885,12 @@ button {
         margin-bottom: 10px;
     }
 
+    
+
 }
 
 @media (min-width: 80px) and (max-width: 1250px) {
+    
     #ytdiv {
     width: 100%;
     }
@@ -815,7 +910,7 @@ button {
     #videoshowcase {
 
     text-align: center;
-    width: 90%;
+    width: 100%;
 
     border-width: 5px;
     border-style: solid;
@@ -877,6 +972,10 @@ button {
 
 @media (min-width: 0px) and (max-width: 800px) {
 
+#soundphotoshowcase {
+    width: 100%;
+    display: flex;
+}
 
 .quote {
     font-size: medium;
@@ -994,7 +1093,7 @@ footer {
 #videoshowcase {
 
     text-align: center;
-    width: 90%;
+    width: 100%;
 
     border-width: 5px;
     border-style: solid;
