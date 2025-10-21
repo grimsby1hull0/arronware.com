@@ -966,8 +966,12 @@ button {
 
 }
 
+@media (min-width: 0px) and (max-width: 550px) {
 
-
+    #webgif {
+        width: 90% !important;
+    }
+}
 
 
 @media (min-width: 0px) and (max-width: 800px) {
@@ -983,6 +987,8 @@ button {
     margin-right: auto;
     width: 80%;
 }
+
+
 
 .webcommbox {
     height: fit-content;
