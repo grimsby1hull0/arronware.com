@@ -836,7 +836,140 @@ button {
 
 
 
+
+/* articles */
+
+.article-preview {
+    width: 50%;
+    background-color: #e78850a3;
+    border-radius: 15px;
+    border-width: 0.5px 1px 0.5px 1px;
+    border-style: solid;
+    border-color: white;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px #d19d50;
+}
+
+.article-preview:hover {
+    background-color: #e78850;
+    transition: 0.5s;
+    border-width: 0.5px 0.2px 0.5px 0.2px;
+}
+
+#article-title {
+    font-family: vollkorn;
+    color: white;
+    font-size: 4vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    -webkit-text-stroke-width: thin;
+}
+
+#article-author {
+    font-size: medium;
+}
+
+#article-length {
+    font-size: medium;
+    background-color: #bb5f28;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+#article-index {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-link {
+    
+    font-family: vollkorn;
+    font-size: 2vh;
+    color: white !important;
+    font-style: italic;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.index-link:hover {
+    font-style: normal;
+    transform: translatex(10px) !important;
+}
+
+
+.article-subheader {
+    font-family: vollkorn;
+    font-size: 3vh;
+    color: white;
+}
+
+.article-subsubheader {
+    color: white; 
+    font-size: large; 
+    text-align: left; 
+    display: block; 
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+
+}
+
+.article-body-text {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1px) and (max-width: 1280px) {
+
+
+    /* article */
+
+    .article-preview {
+        width: 90%;
+    }
+
+    #article-title {
+        -webkit-text-stroke-width:unset;
+        font-size: xx-large;
+    }
+
+
+
+
+
 
     #soundphotoshowcase {
         width: 90%;
@@ -1064,6 +1197,7 @@ html {
 #home {
     width: 95%;
     min-height: 100%;
+    
 }
 
 footer {

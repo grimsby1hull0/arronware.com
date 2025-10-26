@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+</script>
+
+<script>
+function swapDivs(showId, hideId, button) {
+  document.getElementById(showId).style.display = 'inline'; 
+  document.getElementById(hideId).style.display = 'none';
+
+  // Reset all buttons
+  document.querySelectorAll('.sound-title').forEach(btn => btn.classList.remove('active'));
+
+  // Highlight the one that was clicked
+  button.classList.add('active');
+}
+</script>
+
+
+
+<html style="scroll-behavior: smooth !important;">
+    <head>
+        <title>Arron Ware: Phil Spector</title>
+        <link rel="icon" href="assets/icon.ico">
+
+        <link href="style.css" rel="stylesheet">
+
+        <meta property="og:image"  content="https://arronware.com/assets/widgetpreview.jpg" />
+        <meta name="description" content="Researching the impact of Phil Spector's Wall Of Sound">
+        <meta name="keywords" content="arron, ware, phil spector, wall of sound, george harrison, research, the beatles, 1960s, music production, recording">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Arron Ware">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    </head>
+
+    <body>
+        <div id="sitetitle"><img id="titleprops" src="assets/sitetitle.jpg" alt="website title"  width="100%" style="margin-left: auto; margin-right: auto; display: block;"></div>
+        <div id="home">
+            <div id="navbar">
+                <a href="index.html">biography</a>
+                <a href="web.html">web</a>
+                <a href="photography.html">photography</a>
+                <a id="selected" href="music_and_sound.html">sound</a>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="line"></div>
+
+            
+
+            
+            
+            <content >
+
+                <h1 id="article-title">
+                    Evaluating The Impact Of Phil Spector’s Wall Of Sound
+                </h1>
+                <h3 id="article-author">By Arron Ware, 2025</h3>
+                <h3 id="article-length">3,115w - 30 mins</h3>
+                <br><br><br>
+                <div id="article-index">
+                <a class="index-link" href="#introduction">Introduction</a><br>
+                <a class="index-link" href="#origins">Origins</a><br>
+                <a class="index-link" href="#techniques">Techniques in depth</a><br>
+                <a class="index-link" href="#reception">Reception</a><br>
+                <a class="index-link" href="#benefits">Benefits Of The Technique
+                </a><br>
+                <a class="index-link" href="#critiques">Criticisms Of The Technique
+                </a><br>
+                <a class="index-link" href="#revival">Revival</a><br>
+                <a class="index-link" href="#conclusion">Conclusion</a><br>
+                </div>
+                <br><br><br>
+                <h2 class="article-subheader" id="introduction">Introduction</h2>
+                <h3 class="article-body-text">The wall of sound is a production style developed by American producer Phil Spector, which
+                    involves layering different instrumental takes to create a blended soundscape. A key component
+                    of the technique is to record further away from the instruments to create a reverb effect. This
+                    technique has notably been used in albums as diverse as George Harrison’s 1970 ‘All Things
+                    Must Pass’, The Beatles' 1970 ‘Let It Be’ and across Tame Impala’s discography. <br><br>
+
+                    He first began experimenting with this style in the early 60s with The Ronettes, and he would go
+                    on to produce and record acts such as The Beatles, their solo records and The Ramones.
+                    <br>
+                    We will explore the technique’s historical influences, alongside some of the modern genres that
+                    have put their own innovative spin on this production style. We will be discussing the merits of
+                    the technique, such as how well it has aged, how albums using it were originally received, and
+                    some of the most common criticisms against it.
+                </h3>
+
+                <br><br><br><br><br><br><br><br>
+
+                <h2 class="article-subheader" id="origins">Origins</h2>
+                <h3 class="article-body-text">
+                    Harvey Philip Spector was an American record producer, born in 1939 in New York City.
+                    <br><br><br>
+                    His first experience with record production was in Gold Star Studios in Hollywood with his band
+                    ‘The Teddy Bears’. This is where he would later develop his wall of sound process whilst
+                    working as a freelance producer.
+                    <br><br><br>
+                    The earliest musical development that played a vital role in the wall of sound was instrument
+                    layering. Hector Berlioz pioneered this with his exploration into creating new sonic textures
+                    through the use of overtones and instruments playing the same parts (Brusen, 1952). This
+                    featured heavily in his 1830 composition titled ‘Symphonie Fantastique’ which was considered
+                    to be ‘revolutionary, radical and unprecedented’ (Service, 2014). This composition has similar
+                    aspects to the wall of sound style, which showcases how these techniques originated in classical
+                    settings rather than contemporary pop. Although the wall of sound style is criticized for sounding
+                    ‘dated’, this demonstrates that the general principles behind it have longevity.
+
+                    <br><br><br>
+                    The wall of sound was primarily inspired by the hit songs of 50’s songwriting duo Jerry Leiber
+                    and Mike Stoller (Leiber and Stoller | Encyclopedia.com, no date). Their first hit was ‘Hard
+                    Times’ in 1952, followed by ‘Hound Dog’, and ‘Stand By Me’ - alongside a whole host of songs
+                    that Elvis covered. Much of their production career (including the examples featured above)
+                    features prime examples of instrument layering (Myers, 2012), similar to Spector’s style, but
+                    instead focusing on individual instruments for a subtle approach.
+
+                    <br><br><br>
+                    In the spring of 1960, Leiber and Stoller’s mentor recognised Spector’s talent in his work with
+                    ‘The Teddy Bears’, and invited him to their New York City office to act as a writer and producer
+                    (Williams, 2021). During this period, Spector had access to resources which allowed him to
+                    experiment with his own production methods. I believe his wall of sound style flourished from
+                    the writing duo’s influence and guidance, especially their greater experience in instrument
+                    layering (Myers, 2012).
+                    <br><br><br>
+                    In 1961, after this apprenticeship, “Spector came to form his own independent record company,
+                    Philles” (Williams, 2009). He used this as an opportunity to experiment with wall of sound
+                    techniques on artists such as The Ronettes and The Crystals.
+
+                    <br><br><br>
+
+                    After the widespread success of these records, Spector had the credibility to select a range of
+                    “incredibly technically gifted musicians” that would become his go-to choices; forming a
+                    collective that came to be known as ‘The Wrecking Crew’ (Kemp, 2021b) (Fry, 2022).
+
+                    <br><br><br>
+
+                    By assembling The Wrecking Crew, Spector was able to consistently work with a set group of
+                    musicians who were familiar with his recording process. I believe this helped him to effectively
+                    achieve the production style he envisioned, as the musicians could set up microphones with
+                    optimal placements, and were aware of how the positioning of their instruments relative to the
+                    microphone would alter the timbre of the recorded sound.
+
+                    <br><br><br>
+
+                    After its assembly, The Wrecking Crew became heavily sought after, especially once they
+                    worked for other popular musicians such as Frank Sinatra, The Beach Boys and The Monkees
+                    (Maranuchi, 2008).
+                    
+                    <br><br><br><br><br><br><br><br><br>
+
+
+                </h3>
+
+
+                <h2 class="article-subheader" id="techniques">Techniques in depth</h2>
+                <h3 class="article-body-text">
+
+                    The term ‘wall of sound’ was first coined by the manager and publicist for The Rolling Stones,
+                    Andrew Loog Oldham (Fry, 2022). This production style is notably characterised by a recording
+                    mindset that embraces oversaturation, as the technique often involves layering multiple takes of
+                    instruments playing the same part (Kemp, 2021). This allowed Spector to begin “building up a
+                    block of sound”. He would proceed to add space between the different elements in the
+                    composition with additional plate reverb and mixing (Record Collector, 2020).
+
+                    <br><br><br>
+
+                    Leiber and Stoller created the core idea behind the wall of sound, however, their methods
+                    differed from Spector. They intended to retain "much more clarity in terms of instrumental
+                    colors”, as opposed to Spector’s approach which “deliberately blended everything into a kind of
+                    mulch.” He “was the first one to use multiple drum kits, three pianos and so on.” (Moorefield,
+                    2010). These were primary elements in the compositions, which created an active soundscape, as
+                    opposed to only applying the method to individual elements like Leiber and Stoller. Their
+                    method compared to Phil’s, although not as experimental and all encompassing, proved to be just
+                    as effective, as it tended to be more minimal and less divisive as a result.
+
+                    <br><br><br>
+
+                    “Spector chose to exploit the sonic qualities of the studio itself, allowing sounds to bounce
+                    around the room and blend into a dense sonic mess, rich with complex overtones” (Kemp, 2021).
+                    Spector would also position the microphones strategically; they would often be facing a wall to
+                    accentuate the natural reverberative qualities of the space. This would allow him to focus on
+                    recording the blended sound of the instruments, rather than trying to isolate each individual
+                    instrument (Fields, 2024).
+
+
+                    <br><br><br>
+
+                    After utilising the recording space, Spector would route the recorded audio into an echo
+                    chamber. This drowned out the sound of the dry signal with the signal from the echo chamber,
+                    which created a broad spatial quality to the sound (Quinn, 2019). The overall aim was to achieve
+                    a fuller and richer tone, so that when mixed well, the individual instruments would become
+                    indistinguishable to the listener (Maplethorpe, 2024).
+
+                    <br><br><br> <br><br><br> <br><br><br>
+
+
+
+
+
+
+
+                </h3>
+
+
+
+                <h2 class="article-subheader" id="reception">Reception</h2>
+                <h3 class="article-body-text">
+                    <span class="article-subsubheader">1970: ‘Let It Be’ - The Beatles</span><br>
+                    On release, the main criticism from reviewers was that Spector resorted to his usual arsenal of
+                    orchestral and choir elements to compliment the songs. This subsequently made the songs feel
+                    more insincere and “emotionally vapid”, leaving reviewers feeling that Spector’s production had
+                    turned the songs from ‘rough gems’ to ‘costume jewellery’ (Mendelsohn, 1970). However, I
+                    believe that the production, most notably the layering, creates a distinct sound for the recordings
+                    and makes the tracks feel a lot weightier with the orchestral backing and choir being layered
+                    beneath the instruments.
+
+                    <br><br><br>
+
+                    Spector’s production methods were so divisive that the Spector-produced Beatles album ‘Let It
+                    Be’ had caused the Beatles to have long divided opinions about the album, until 2003 when they
+                    released a ‘de-Spectorised version’ (Starr, 2003) titled ‘Let It Be...Naked’. In this edition, they
+                    stripped the production back to the core elements of the album, completely removing any sign of
+                    Spector’s influence.
+
+                    <br><br><br>
+
+                    
+                    The Beatles previous producer George Martin jokingly suggested that the credits on the album
+                    should be “produced by George Martin, over-produced by Phil Spector” (Uncut and Martin,
+                    2012). In contrast, John Lennon defended the album’s production, saying: "He was given the
+                    shittiest load of badly recorded shit – and with a lousy feeling to it – ever. And he made
+                    something out of it” (Lennon, 2020). George Harrison and Ringo Starr kept their positive
+                    outlook on the album’s production (Doggett, 2011), with Starr saying "I like what Phil did …
+                    there's no point bringing him in if you're not going to like the way he does it" (The Beatles,
+                    2000). Paul McCartney believed that Spector didn’t capture their stripped back, live-to-tape
+                    aesthetic (DeCurtis, 2018) as evident in the Let It Be documentary with many funny, spirited and
+                    communal (Gleiberman, 2024) moments scattered throughout the recording stage.
+
+                    <br><br><br><br><br><br>
+
+
+
+                    <span class="article-subsubheader">1977: ‘Death Of A Ladies Man’ - Leonard Cohen</span><br>
+
+                    Another example of Spector’s production negatively impacting an artist’s image can be seen in
+                    Leonard Cohen's 1977 album ‘Death of a Ladies Man’. Cohen is widely known for his
+                    “minimalist composition of his nylon string guitar, beautiful deep vocals focused on the lyrical
+                    content, and the occasional additional instrument joining the mix” (Leatham, 2022). However,
+                    when Spector produced this Cohen album, he added an array of complex instrumentation which
+                    resulted in the album sounding too bombastic. The production style felt disjointed from Cohen’s
+                    vocal performance, and this distracted from the album’s lyrical content.<br><br><br>
+
+
+                    Later in the recording process, Spector also hijacked creative control of the album, by mixing the
+                    songs without Cohen. He used Cohen’s unfinished vocal takes, which were intended solely to
+                    guide the backing vocalists, in the final mix. As a result of Spector’s instinctive production
+                    method, the album’s vocals forcefully undermine Cohen’s artistic intentions, as he was unable to
+                    finalise his vocal performance. Cohen was tempted to overrule the mixing, but Spector had
+                    previously threatened him at gunpoint, so he reconsidered and decided that it wasn’t worth
+                    challenging (Leatham, 2022).<br><br><br>
+
+
+                    On the other hand, many, including Cohen, admitted years later that Spector’s decision to retain
+                    the original tracking vocals benefitted the overall style of the album. This was due to the general
+                    theme of the lyrics being quite ‘sleazy’ (Hewitt, 2019), and this lyrical content was expressed
+                    better with a less refined vocal style.<br><br><br>
+
+
+                    
+                    The over-the-top instrumentation used in the wall of sound also helped to portray the overall
+                    story of the album. The bombastic style portrayed an illusion of grandeur suitable for a ladies'
+                    man, which the album is based around. This interpretation is supported by reviews which
+                    describe the production style as ‘costume jewellery’ (Mendelsohn, 1970), which favours
+                    appearance over integrity. This expresses an inflated sense of ego and self-image, which fits the
+                    concept behind the album’s titular song.
+
+                    <br><br><br><br><br><br>
+
+                    <span class="article-subsubheader">1970/2020 Mix: ‘All Things Must Pass’ - George Harrison</span><br>
+
+                    George Harrison’s first solo album ‘All Things Must Pass’ had a very successful release, but the
+                    wall of sound production style led to controversy that even George Harrison came to regret
+                    (Abbey Road, 2021). This created the dilemma of people loving the album but despising the
+                    production; a divide that is still present today.<br><br><br>
+
+
+                    In 2020, Dhani Harrison and producer Paul Hicks came together to create a new 50th anniversary
+                    mix of the album. They tried to appease the fans that wanted it to be kept close to the original,
+                    and the others who wanted it ‘de-Spectorised’ (Light, 2021). The resulting mix abolished “all the
+                    sludge fomented by Spector’s overuse of reverb and too many overdubs” (Taffel, 2021), pushing
+                    Harrison’s vocals to the forefront more than the original mix.<br><br><br>
+
+
+                    This practise of remixing presents an issue for listeners who consume media through streaming
+                    services, as new mixes and remasters of albums tend to be the copies that get circulated by labels
+                    on streaming services. Most remasters hosted on these services were done during the ‘loudness
+                    wars’ period of reissuing. The loudness wars began to change the sound of music on reissues to
+                    make it appear more impactful by increasing the volume of the files, therefore reducing the
+                    dynamic range, increasing the perceived loudness to the listener.<br><br><br>
+
+
+                    The overabundance of reissues has notably led famous artists such as The Beatles and Pink
+                    Floyd to be “remastered several times, to the point where it becomes difficult to find a reference
+                    version for any of their albums” (Deruty, 2011). Most albums had new mixes created for them to
+                    promote new and convenient formats like CD and Minidisc; these mixes were produced
+                    primarily out of greed rather than to improve the sound. In addition, the original masters are
+                    usually removed from streaming, which forces fans to listen to albums which have been
+                    remastered to sound vastly different from the original mix. For artists who have passed away,
+                    and who were unable to consent to the differences in the new remasters, the future perception of
+                    their album is forcefully altered against their will.
+
+                </h3>
+                <br><br><br> <br><br><br> <br><br><br>
+
+                <h2 class="article-subheader" id="benefits">Benefits of using the wall of sound technique</h2>
+                <h3 class="article-body-text">
+
+                    Despite these criticisms, the wall of sound technique also has some striking qualities which I
+                    believe could benefit certain songs. Spector’s method of creating reverberation feels like it
+                    retains more tonality from the source of sound, as opposed to other methods from the era such as
+                    spring or plate reverb.<br><br><br>
+
+
+                    The Wall Of Sound technique became favourable because of the complex natural reverberation
+                    that created Spectors distinctive production sound, when played on AM radio it helps the songs
+                    stand out greatly due to this vastly different sound.<br><br><br>
+
+
+                    Another aspect of Spector’s production that benefits the recordings is that his frequent use of
+                    layering instrumentation fleshes out the sound of the mix. Especially when it comes to albums
+                    such as George Harrison’s ‘All Things Must Pass’ where Spector compensates for the ‘thinness’
+                    of Harrison’s voice by complimenting it with a gentler approach to his wall of sound,
+                    highlighting Harrison’s ‘melodic flair’ (Decurtis, 2000) whilst still staying true to Harrison’s
+                    original vision.
+
+
+
+                </h3>
+                <br><br><br> <br><br><br> <br><br><br>
+
+
+                <h2 class="article-subheader" id="critiques">Criticisms of the wall of sound technique</h2>
+                <h3 class="article-body-text">
+                    Spector’s wall of sound production is generally criticised for his extremely ‘reverb-heavy’
+                    production (Browne, 2021) which some people believe make the mixes too distant or muddy.
+                    Alongside this, Spector’s productions often feature an extensive array of orchestral
+                    instrumentation which can often feel a bit tacky if not executed within a certain context of the
+                    recorded performances and artist’s intentions for the composition.
+
+
+
+                </h3>
+                <br><br><br> <br><br><br> <br><br><br>
+
+
+                <h2 class="article-subheader" id="revival">Revival</h2>
+                <h3 class="article-body-text">
+                    <span class="article-subsubheader">Shoegaze</span><br>
+                    The revival of this production style has its roots within the shoegaze genre, originating in the
+                    group Cocteau Twins’ 1982 album ‘Garlands’, as well as Jesus and Mary Chain. Both bands
+                    utilise all-encompassing soundscapes, which feature an array of layered instruments and vocals
+                    which were commonplace in Spector’s wall of sound productions (Young, 2006).<br><br><br>
+
+
+                    Shoegaze’s secondary influence, 60s psychedelia, provided the genre’s drone and noise aspects
+                    along with the amateur-ish vocal style that originated from the DIY psychedelic movement in the
+                    60s (Halligan, 2014).<br><br><br>
+
+
+                    In 1991 the Irish, English group My Bloody Valentine expanded on this with their album
+                    ‘Loveless’, to many this defined the shoegaze genre. The group would layer different guitar
+                    takes, which had minor variations on basic chord progressions, and they would then overdub this
+                    with some layered vocal melodies (Fisher, 2006).<br><br><br>
+
+
+                    Both of these artists defined the Shoegaze genre that is still thriving and being discovered by new
+                    audiences today.
+
+                    <br><br><br><br><br><br>
+                    <span class="article-subsubheader">60s Pop Revival</span><br>
+                    Spector’s unique style has solidified its status as an iconic staple of 60s music innovation, not
+                    only from the vast array of modern artists that have incorporated it into their own styles (such as
+                    Tame Impala), but also from those imitating the 60s pop sound entirely, with artists such as Amy
+                    Winehouse combining this sound with instrumentation and vocal performances inspired by
+                    Motown, Blues and Jazz.<br><br><br>
+
+
+                    Winehouse and producer Mark Ronson managed to expand on the Phil Spector sound whilst
+                    working within the same range of genres to produce something that “plays a trick on the listener,
+                    suggesting itself as a song they have known for all of their lives” (Buchanan, 2019).<br><br><br>
+
+                    
+                    Winehouse and Ronson’s album ‘Back To Black’ has since become critically acclaimed on a
+                    global scale, this shows the timeless quality of the technique, proving that, even when done
+                    traditionally, it leaves a lot of options open to mixing a range of different styles together
+                    effectively.
+
+
+
+                    <br><br><br><br><br><br>
+                    <span class="article-subsubheader">Alternative/Indie</span><br>
+
+                    This has also become quite commonly used in Indie and Alternative music, with its beginnings in
+                    this genre stemming from the aftermath of shoegaze popularizing it has made it even more
+                    common.<br><br><br>
+
+
+                    Notable modern examples (post 2000s) are from groups such as Animal Collective which use the
+                    wall of sound production within an entirely new genre, Indie Pop. Their 2009 album
+                    ‘Merryweather Post Pavillion’ has been very well received, and the band have been hailed as
+                    “one of the 21st century’s most distinctive acts, and one of the most experimental to find
+                    widespread success” (Szatan, 2018). This widespread positive feedback goes to show that
+                    Spector’s production technique is timeless, with many other new artists becoming very
+                    successful whilst using it.<br><br><br>
+
+
+                    The modern Psychedelic Pop subgenre thrives on the wall of sound production, with artists such
+                    as Tame Impala using it as a key element on almost every one of his albums, alongside openly
+                    admitting that he has “always been in love with the wall of sound as employed by My Bloody
+                    Valentine.” (Los Angeles Times, 2010) with reviews of his latest album mentioning that Phil
+                    Spector himself would have been proud of the “enchanting layering of instruments” (Joshi,
+                    2020).
+
+
+
+
+
+
+                </h3>
+
+                <br><br><br> <br><br><br> <br><br><br>
+
+                <h2 class="article-subheader" id="conclusion">Conclusion</h2>
+                <h3 class="article-body-text">
+                    The wall of sound is a technique that is very divisive with a strong cult following. Its early 60s
+                    pop ancestry demonstrated that experimental production practices could prove to be very
+                    favourable; it helped substantially to distinguish the song from other pop productions on the
+                    radio and set Brian Wilson off on a frenzy to obsessively learn how it was created.<br><br>
+
+
+                    Analyzing the history of the techniques further we can see that the layering element dates back to
+                    mid 19th century Classical compositions by Hector Berlioz.<br><br>
+
+
+                    Then in later years it went on to inspire the creation of the shoegaze genre, starting with Cocteau
+                    Twins in the early 80s until it was fully established in 1991 with My Bloody Valentines’ album
+                    ‘Loveless’. The wall of sound influence continued past the prime shoegaze era and continues to
+                    be commonly used in a wide range of genres such as Alternative and Indie, being featured by
+                    artists such as Tame Impala, Animal Collective and in a range of 60s revivals originating after
+                    Amy Winehouse released her seminal album ‘Back To Black’ in 2006.
+
+
+
+
+                </h3>
+
+
+                <br><br><br> 
+                
+                <a id="artistcvbutton" href="#">Back to the beginning?</a>
+                
+                
+                
+                
+                <br><br><br> <br><br><br><br><br><br> <br><br><br> <br><br><br>
+
+                <h2 class="article-subheader">References</h2>
+                <h3 class="article-body-text" style="font-size:small; line-break: anywhere;">
+
+                    Kemp, S. (2021) 'Dissecting Phil Spector’s ‘wall of sound’ technique,' Far Out Magazine, 26
+                    December. https://faroutmagazine.co.uk/phil-spectors-wall-of-sound-
+                    technique/#:~:text=In%20simple%20terms%2C%20the%20wall%20of%20sound,dense
+                    %20sonic%20mess%2C%20rich%20with%20complex%20overtones.
+                    <br><br>
+                    Leiber and Stoller | Encyclopedia.com (no date).
+                    https://www.encyclopedia.com/education/news-wires-white-papers-and-books/leiber-
+                    and-
+                    stoller#:~:text=Songwriters%2C%20producers&text=What%20was%20rhythm%20and%
+                    20blues,been%20working%20together%20ever%20since..
+                    <br><br>
+                    Moorefield, V. (2010) The Producer as Composer Shaping the Sounds of Popular Music.
+                    https://mitpress.mit.edu/9780262514057/the-producer-as-composer/ (Accessed: April 13,
+                    2025).11
+                    <br><br>
+                    Williams, R. (2021) 'Phil Spector obituary,' The Guardian, 17 January.
+                    https://www.theguardian.com/us-news/2021/jan/17/phil-spector-obituary.
+                    <br><br>
+                    Williams, R. (2009) Phil Spector: Out of his head.
+                    https://books.google.co.uk/books?hl=en&lr=&id=vyyVGNycEA0C&oi=fnd (Accessed:
+                    April 13, 2025).
+                    <br><br>
+                    Kemp, S. (2021b) 'The Wrecking Crew: The unsung legacy of rock music’s greatest studio band,'
+                    Far Out Magazine, 18 October. https://faroutmagazine.co.uk/the-wrecking-crew-the-
+                    unsung-legacy-of-rock-music-greatest-studio-band/.
+                    <br><br>
+                    Record Collector (2020) Building The Wall Of Sound – Phil Spector’s Golden Sixties.
+                    https://recordcollectormag.com/articles/building-the-wall-of-sound-phil-spectors-golden-
+                    sixties.
+                    <br><br>
+                    Fry, D. (2022) Phil Spector and the ‘Wall-To-Wall’ of Sound — CX Network.
+                    https://www.cxnetwork.com.au/phil-spector-and-the-wall-to-wall-of-sound/ (Accessed:
+                    April 14, 2025).
+                    <br><br>
+                    Fields, N. (2024) Phil Spector’s “Wall of Sound”: The Technique that Changed Music Forever.
+                    https://www.nathanfieldsmusic.com/blog/wall-of-sound-technique-phil-
+                    spector#:~:text=Echo%20Chambers%3A%20Spector%20took%20advantage,create%20a
+                    %20cohesive%20sonic%20wall.12
+                    <br><br>
+                    Maranuchi, T., Jr. (2008) The Wrecking Crew | Music Documentary | about the film.
+                    https://www.wreckingcrewfilm.com/about.php#:~:text=The%20Wrecking%20Crew%20
+                    was%20a,Phil%20Spector's%20Wall%20of%20Sound. (Accessed: April 14, 2025).
+                    <br><br>
+                    Brown, M. (2007) Tearing down the wall of sound : the rise and fall of Phil Spector : Brown,
+                    Mick, 1950- : Free Download, Borrow, and Streaming : Internet Archive.
+                    https://archive.org/details/tearingdownwallo0000brow/mode/2up.
+                    <br><br>
+                    Starr, R. (2003) The Beatles, Let it Be... Naked | OMM | The Observer.
+                    https://www.theguardian.com/observer/omm/10bestcds/story/0,,1062879,00.html#:~:text
+                    ='It's%20the%20de%2DSpectorised%20version%2C'%20said%20Ringo.%20'Cleaned,pe
+                    ople.'%20He%20emitted%20a%20confident%2C%20though%20slightly (Accessed:
+                    April 15, 2025).
+                    <br><br>
+                    Mendelsohn, J. (1970) 'Let it be,' Rolling Stone, 11 June.
+                    https://www.rollingstone.com/music/music-album-reviews/let-it-be-2-187101/.
+                    <br><br>
+                    Leatham, T. (2022) 'Leonard Cohen’s ‘Death of a Ladies’ Man’: a Phil Spector disasterclass,'
+                    Far Out Magazine, 13 November. https://faroutmagazine.co.uk/leonard-cohen-death-of-
+                    a-ladies-man-phil-spector/.
+                    <br><br>
+                    Uncut and Martin, G. (2012) Produced by George Martin.
+                    https://www.uncut.co.uk/reviews/produced-by-george-martin-2293/.13
+                    <br><br>
+                    Doggett, P. (2011) Peter Doggett. You never give me your money: The Beatles after the breakup.
+                    https://go.gale.com/ps/i.do?id=GALE%7CA281461743&sid=googleScholar&v=2.1&it=r
+                    &linkaccess=abs&issn=15597334&p=AONE&sw=w&userGroupName=anon%7Ec899e
+                    748&aty=open-web-entry (Accessed: April 15, 2025).
+                    <br><br>
+                    The Beatles (2000) The Beatles Anthology [PDF], Internet Archive. San Francisco, California,
+                    United States of America: Chronicle Books.
+                    https://archive.org/details/beatlesanthology0000unse_y2k8.
+                    <br><br>
+                    Gleiberman, O. (2024) 'Variety,' Variety, 25 August. https://variety.com/2024/film/columns/let-
+                    it-be-restored-and-re-released-the-beatles-1235988430/.
+                    <br><br>
+                    Hewitt, B. (2019) 'Leonard Cohen: 10 of his best songs,' The Guardian, 9 November.
+                    https://www.theguardian.com/music/musicblog/2015/may/06/leonard-cohen-10-of-the-
+                    best.
+                    <br><br>
+                    Lennon, J. (2020) Mixing 'Let It Be' album #1 (session) • The Paul McCartney Project.
+                    https://www.the-paulmccartney-project.com/session/mixing-let-it-be-album-1/
+                    (Accessed: April 15, 2025).
+                    <br><br>
+                    Taffel, A. (2021) George Harrison: All Things Must Pass 50th Anniversary Edition - The
+                    Absolute Sound. https://www.theabsolutesound.com/articles/george-harrison-all-things-
+                    must-pass-50th-anniversary-
+                    edition/#:~:text=Finally%2C%20in%202020%2C%20George's%20son,that%20truly%20
+                    enhance%20these%20songs. (Accessed: April 15, 2025).14
+                    <br><br>
+                    Abbey Road (2021) 50th anniversary reissue of George Harrison’s legendary ‘All Things Must
+                    Pass’. https://www.abbeyroad.com/news/50th-anniversary-reissue-of-george-harrisons-
+                    legendary-all-things-must-pass-2996 (Accessed: April 15, 2025).
+                    <br><br>
+                    Deruty, E. (2011) 'Dynamic Range' & the Loudness War.
+                    https://www.soundonsound.com/sound-advice/dynamic-range-loudness-war (Accessed:
+                    April 16, 2025).
+                    <br><br>
+                    Maplethorpe, D. (2024) 'What exactly was Phil Spector’s ‘Wall of Sound?’,' Far Out Magazine,
+                    16 February. https://faroutmagazine.co.uk/what-exactly-was-phil-spectors-wall-of-
+                    sound/.
+                    <br><br>
+                    Young, T. (2006) 'RECORDINGS IN REVIEW,' The Yale Review, 94(4), pp. 188–195.
+                    https://doi.org/10.1111/j.1467-9736.2006.00252.x.
+                    <br><br>
+                    Halligan, B. (2014) 'Shoegaze as the third wave: Affective Psychedelic Noise, 1965-1991,' Wlv
+                    [Preprint].
+                    https://www.academia.edu/7744844/Shoegaze_as_the_Third_Wave_Affective_Psychedel
+                    ic_Noise_1965_1991.
+                    <br><br>
+                    Fisher, D.R. (2006) My Bloody Valentine’s Loveless. MA Thesis. Florida State University.
+                    https://repository.lib.fsu.edu/islandora/object/fsu:182579/datastream/PDF/view.15
+                    <br><br>
+                    Szatan, G. (2018) An Oral History of Animal Collective | Red Bull Music Academy.
+                    https://daily.redbullmusicacademy.com/2018/11/animal-collective-oral-history
+                    (Accessed: April 17, 2025).
+                    <br><br>
+                    Los Angeles Times (2010) 'Tame Impala’s Kevin Parker discusses his band’s success, origins and
+                    impressions of California - Los Angeles Times,' 30 June.
+                    https://www.latimes.com/archives/blogs/pop-hiss/story/2010-06-29/tame-impalas-kevin-
+                    parker-discusses-his-bands-success-origins-and-impressions-of-california.
+                    <br><br>
+                    Joshi, M. (2020) Tame Impala’s ‘The Slow Rush’: ‘Pet Sounds’ for a modern world.
+                    https://theboar.org/2020/03/tame-impalas-the-slow-rush-pet-sounds-for-a-modern-world/
+                    (Accessed: April 17, 2025).
+                    <br><br>
+                    Buchanan, D. (2019) Soul Music - The Healing Sorrow Of Amy Winehouse’s Back To Black.
+                    https://www.bbc.co.uk/programmes/articles/4n7jldwsZ78WpVVY02d2LB8/the-healing-
+                    sorrow-of-amy-winehouse-s-back-to-black (Accessed: April 17, 2025).
+                    <br><br>
+                    Brusen, R.F. (1952) The orchestration of Hector Berlioz, with special reference to the
+                    Symphonie Fantastique. https://minds.wisconsin.edu/handle/1793/11412.
+                    <br><br>
+                    Service, T. (2014) 'Symphony guide: Hector Berlioz’s Symphonie Fantastique,' The Guardian,
+                    19 August. https://www.theguardian.com/music/tomserviceblog/2014/aug/19/symphony-
+                    guide-hector-berliozs-symphonie-fantastique.16
+                    <br><br>
+                    Myers, M. (2012) 'Not a One-Song Wonder,' Wall Street Journal, 28 May.
+                    https://www.wsj.com/articles/SB10001424052702303360504577408111005111208.
+                    Browne, D. (2021) 'Massive George Harrison ‘All Things Must Pass’: inside new reissue,'
+                    Rolling Stone, 6 August. https://www.rollingstone.com/music/music-features/george-
+                    harrison-all-things-must-pass-reissue-dhani-harrison-1178125/.
+
+
+
+                </h3>
+
+
+
+
+
+            </content>
+            
+
+            
+
+            
+
+
+            
+            
+        </div>
+
+
+        <footer>
+            <div w3-include-html="footer.html"></div>
+
+        </footer>
+
+
+    </body>
+
+
+
+
+</html>
+
+<script>
+    includeHTML();
+</script>
