@@ -890,6 +890,7 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 0 #bb5f28;
 }
 
 .index-link {
@@ -912,6 +913,7 @@ button {
     font-family: vollkorn;
     font-size: 3vh;
     color: white;
+    text-shadow: 0 0 #bb5f28;
 }
 
 .article-subsubheader {
@@ -928,6 +930,7 @@ button {
     font-size: 20px;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: left;
 }
 
 
