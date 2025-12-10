@@ -951,6 +951,18 @@ button {
     font-size: small;
 }
 
+.broadcastcvlink {
+    color: white;
+    background-color: #e9874c;
+    border-radius: 5px;
+    padding: 2px;
+    font-style: normal;
+}
+
+.broadcastcvlink:hover {
+    background-color: #f39961;
+}
+
 #broadcastR {
     float: right;
     /* background-color: red; */
@@ -967,7 +979,15 @@ button {
 
 
 
+@media (min-width: 1px) and (max-width: 400px) {
 
+    .contactoption {
+        margin: 0px;
+    }
+
+    
+
+}
 
 
 
