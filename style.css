@@ -186,6 +186,7 @@ footer {
     color: white;
     vertical-align: middle;
     padding: 10px;
+    font-style: italic;
 
 
 
@@ -194,7 +195,7 @@ footer {
 
 .footer-link:hover {
     text-decoration: underline;
-    font-style: italic;
+    font-style: normal;
     border-width: 0px;
 
 
