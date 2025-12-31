@@ -1,0 +1,18 @@
+The key skills that I have developed are centered around team working, problem solving and communication. During my time at university, I volunteered at the British Heart Foundation in Manchester Piccadilly; from this experience I worked with a wide range of people and further developed my communication skills with general customers. Prior to this, I completed an internship at DFDS Seaways - this was a perfect opportunity to develop my skills at explaining technical concepts to other employees in a professional environment; a vital skills for a broadcast engineer. 
+
+My general personality is friendly and outgoing - I often strike up conversations with anyone I meet. I'm not afraid to ask clarifying questions if I'm unsure about something, as this helps me develop my knowledge to adapt to a work environment faster. This was especially prevalent during university, where my friend felt insecure about going up to the lecturer to ask a question, but I was more than happy to ask for clarification on a subject.
+
+In terms of broadcast engineering, I recently completed an internship at dock10 with the MCR/Broadcast engineers. During this role, I became familiar with Phabrix testing devices as we toured the site to prepare it for a Children in Need event. We ensured that the exterior IO boxes on the courtyard were in full working order to eliminate any potential issues on the day. The majority of my time here was spent troubleshooting broadcasting equipment and resolving issues within production studio spaces.
+
+I have also been studying Audinate's Dante training courses, having recently achieved a Level 1 Dante Certification and enrolling in the Level 2 course.
+
+I also have a keen interest in the history of broadcast technology, as well as future advancements that could impact the field. This has given me a deeper perspective on current systems and how they might interact with legacy equipment.
+
+
+For the past five years, I have self-hosted my own web services, and managed and security hardened my home server. This has given me experience with Linux servers, Docker containers and configurations. 
+Some of the services that I have hosted and managed were: 
+- Media servers to host my collection of CD, DVD, blu-ray and vinyl for easy access and preservation.
+- Game servers
+- Web Servers (I design my own websites and share my sound design and photography work on them)
+
+Whilst I use Linux as my go-to choice when it comes to home-use, I have used OSX and Windows extensively in a production environment and have become very familiar with them.
