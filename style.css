@@ -38,6 +38,15 @@ html {
     background-size: 525px;
 }
 
+img {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
 h2 {
     font-family: vollkorn;
     color: #bb5f28;
@@ -207,6 +216,7 @@ footer {
     text-align: right;
     font-family: 'vollkorn';
     font-weight: 100;
+    margin-right: 20px;
 }
 
 
