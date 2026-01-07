@@ -488,6 +488,7 @@ button {
     border-style: solid;
     border-color: white;
     border-radius: 10px;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 #contact {

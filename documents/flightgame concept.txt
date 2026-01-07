@@ -1,0 +1,31 @@
+FLIGHT GAME
+
+
+
+---------GAMEPLAY----------
+
+fun flight physics in semi arcadey style like A Short Hike/Art Of Rally
+
+you have to deliver parcels in your plane to destinations based on a picture of the location and a general direction 
+
+plane customisation and upgrades similar to Dredge
+
+you land your plane (skillfully in different places to chat with locals, maybe be able to exit or just a menu like Dredge)
+
+weather effects and day/night cycle that feels meaningfully long, storms and stuff could mean that you need to fly lower 
+and hug mountains to avoid being struck down
+
+collecting sidequests to find all robot parts (across the map) to make a friend
+
+
+
+
+---------WORLD BUILDING----------
+
+do cute little pseudo radio stations with dinky music that pauses in game ambient score
+
+large map with lots of little structures to explore (continuously getting added)
+
+general appearance of A Short Hike but not top-down
+
+nice skybox with stars and bits to provide atmospheric flights
