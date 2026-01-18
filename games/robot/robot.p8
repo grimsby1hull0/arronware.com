@@ -798,12 +798,12 @@ function _update()
  	questions=true
  end
  
- -- !!! debugging for matched
- if titlepage and btnp(5) then
- 	sfx(01)
- 	titlepage=false
- 	matched=true
- end
+-- -- !!! debugging for matched
+-- if titlepage and btnp(5) then
+-- 	sfx(01)
+-- 	titlepage=false
+-- 	matched=true
+-- end
  
  
  
@@ -1014,7 +1014,7 @@ function _update()
  end
  
 	
-	if btnp(4) and matched then 
+	if matched and btnp(4) then 
 		_init()
 	end
 	
