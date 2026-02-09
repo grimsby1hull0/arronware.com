@@ -1,8 +1,8 @@
 pico-8 cartridge // http://www.pico-8.com
 version 43
 __lua__
-i♥robot - a robot love story
-by arron ware
+--i♥robot - a robot love story
+--by arron ware
 
 -- initialise at beginning
 function _init()
@@ -26,7 +26,7 @@ function _init()
  questions_played=false
  
  
- q_page=1
+ q_page=nil
  
  q_animal=-1
  q_food=nil
@@ -962,6 +962,7 @@ function _update()
  		startgame=false
  		titlepage=false
  		questions=true
+ 		q_page=1
  	end
  
  
