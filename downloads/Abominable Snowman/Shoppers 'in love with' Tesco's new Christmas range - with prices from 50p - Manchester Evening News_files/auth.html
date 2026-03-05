@@ -1,0 +1,39 @@
+
+<!-- saved from url=(0296)https://account.anonymised.io/login/experiment/silent-ifl/landing?redir=https%3A%2F%2Fwww.manchestereveningnews.co.uk%2Fwhats-on%2Fshopping%2Fshoppers-in-love-with-tescos-30462069%3Fcallback%3Din%26code%3DNJA2MTFLYWETZMU1MC0ZY2U3LTG5YTGTZTC2MGFLZGJLNWI3%26state%3Dd8bc18d521484d8c8e90e2a66352c218 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+    </head>
+    <body>
+        <pre id="err" style="display: none"></pre>
+        <script>
+            const searchParams = new URLSearchParams(window.location.search)
+
+            try {
+                window.parent.postMessage(
+                    {
+                        type: 'get-redirect-url',
+                        url: searchParams.get('redir')
+                    },
+                    '*'
+                )
+            } catch (e) {
+                const isDev = window.location.host.startsWith('aegis.dev.')
+                const logErrorURL = isDev ? 'https://material.dev.anonymised.io' : 'https://material.anonymised.io'
+
+                if (isDev) {
+                    const errNode = document.getElementById('err')
+                    errNode.style.display = 'block'
+                    errNode.textContent = e.stack
+                }
+
+                fetch(logErrorURL + "/v3/error", {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        err_type: "[Iframe open error]: " + e.message + ", REDIR: " + searchParams.get('redir')
+                    })
+                })
+            }
+        </script>
+    
+</body></html>

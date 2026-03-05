@@ -1,0 +1,34 @@
+#qc-cmp2-ui .qc-cmp2-consent-info .description *,
+#qc-cmp2-ui .qc-cmp2-consent-list *,
+#qc-cmp2-ui .qc-cmp2-footer-links button,
+#qc-cmp2-ui .qc-cmp2-header-links button[mode="link"],
+#qc-cmp2-ui .qc-cmp2-home-button,
+#qc-cmp2-ui .qc-cmp2-summary-info,
+#qc-cmp2-ui .qc-cmp2-summary-info li,
+#qc-cmp2-ui .qc-cmp2-summary-info p,
+#qc-cmp2-ui div {
+  color: #111211 !important;
+}
+#qc-cmp2-ui .qc-cmp2-summary-buttons button[mode="secondary"],
+#qc-cmp2-ui [mode="link"] {
+  color: #111211 !important;
+  background: #fafafa !important;
+}
+#qc-cmp2-ui {
+  background: #fafafa !important;
+}
+#qc-cmp2-ui .logo-container,
+#qc-cmp2-ui .qc-cmp2-buttons-desktop button,
+#qc-cmp2-ui .qc-cmp2-summary-buttons button,
+#qc-cmp2-ui button[mode="primary"] {
+  background: #f0ba00 !important;
+  color: #111211 !important;
+}
+
+#qc-cmp2-ui .logo-container img {
+  height: 50px !important;
+}
+
+#qc-cmp2-ui .qc-cmp2-summary-buttons {
+  opacity: 0;
+}
