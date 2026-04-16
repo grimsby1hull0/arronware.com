@@ -1,0 +1,21 @@
+-- Open Bar (Your config file is in this folder, use it or it looks terrible)
+https://github.com/neuromorph/openbar
+
+-- cat run cpu usage
+https://github.com/win0err/gnome-runcat
+
+-- vitals system usage upper bar monitor
+https://github.com/corecoding/Vitals
+
+-- just perfection (remove workspaces from top left, god those are awful)
+https://gitlab.gnome.org/jrahmatzadeh/just-perfection
+
+-- dash to dock
+https://micheleg.github.io/dash-to-dock/
+
+-- lan ip address in top bar
+https://github.com/Josholith/gnome-extension-lan-ip-address
+
+-- open weather refined
+https://github.com/romanlefler/gnome-openweather
+
