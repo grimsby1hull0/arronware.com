@@ -30,6 +30,8 @@ a {
 
 html {
 
+   
+
     background-image: url(assets/img/sstvtile.png);
 
 
@@ -1372,7 +1374,7 @@ button {
 }
 
 html {
-    background-size: 300px;
+    /* background-size: 300px; */
 }
 
 
