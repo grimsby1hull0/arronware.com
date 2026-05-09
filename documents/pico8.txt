@@ -1,0 +1,34 @@
+hot air balloon game
+https://www.lexaloffle.com/bbs/?tid=142710
+
+atollo ship battles 
+https://www.lexaloffle.com/bbs/?uid=20676
+
+hangaku gozen - archer japanese defence
+https://www.lexaloffle.com/bbs/?pid=178318#p
+
+tad
+https://www.lexaloffle.com/bbs/?pid=184410#p
+
+
+
+
+adamgyru-short hike lecture
+https://www.youtube.com/watch?v=ZW8gWgpptI8&t=269s
+
+pico8 dev lecture
+https://www.youtube.com/watch?v=87jfTIWosBw
+
+
+shmup
+https://www.youtube.com/watch?v=yXRjdMZYv0U&list=PLea8cjCua_P3Sfq4XJqNVbd1vsWnh7LZd
+
+
+
+misc gamedev stuff
+------------------
+ps1 graphics
+https://www.youtube.com/watch?v=cUiyph17F3A
+
+gabe newell linux gaming lecture
+https://www.youtube.com/watch?v=yeCuasjxsWk
