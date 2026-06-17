@@ -501,6 +501,7 @@ button {
     border-color: white;
     border-radius: 10px;
     image-rendering: -webkit-optimize-contrast;
+    float: right;    
 }
 
 #contact {
