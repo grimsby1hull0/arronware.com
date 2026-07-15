@@ -1,0 +1,35 @@
+0 dog
+1 cat
+2 lion
+3 mouse
+
+0 lemon
+1 strawberry
+2 banana
+3 apple
+
+0 baking
+1 brewski
+2 beach
+3 bike
+
+
+
+
+
+Beeboe		120
+Digby		201
+Robotron	203
+Edwerd		002
+Pugsley		132
+Cogbert		020
+
+
+q_animal=-1
+ q_food=nil
+ q_hobby=nil
+
+
+
+
+
